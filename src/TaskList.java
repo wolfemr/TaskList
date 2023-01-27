@@ -54,8 +54,6 @@ public class TaskList {
                 System.out.println(task);
             }
         }
-
-        getMenuSelection(taskList);
     }
 
 
@@ -66,9 +64,12 @@ public class TaskList {
         int selection = checkUserInput();
 
         switch (selection) {
-            case 1 -> displayTaskList(taskList);
+            case 1 -> {
+                displayTaskList(taskList);
+                getMenuSelection(taskList);
+            }
             case 2 -> Task.addTask(taskList);
-            case 3 -> System.out.println(selection);
+            case 3 -> Task.editTask(taskList);
             case 4 -> Task.deleteTask(taskList);
             case 5 -> System.out.println("Thank you for using the program!");
             default -> {

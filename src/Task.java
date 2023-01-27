@@ -51,19 +51,37 @@ public class Task {
 
         taskList.removeIf(task -> task.getTaskNumber() == taskToDelete);
 
-        /*
-        // iterate through task list until task number that matches user input is found then removed
-        for (Task task: taskList) {
-            if (task.getTaskNumber() == taskToDelete) {
-                taskList.remove(task);
-                System.out.println("Task deleted");
-            }
-        }*/
-
         // decrement all task numbers after deleted task to keep numbering
         for (Task task: taskList) {
             if (task.getTaskNumber() > taskToDelete) {
                 task.setTaskNumber((task.getTaskNumber()) - 1);
+            }
+        }
+
+        TaskList.getMenuSelection(taskList);
+    }
+
+
+    public static void editTask(ArrayList<Task> taskList) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        if (taskList.size() == 0) {
+            System.out.println("There are no items in the to-do list.");
+            TaskList.getMenuSelection(taskList);
+        } else {
+            TaskList.displayTaskList(taskList);
+            System.out.println("Please enter the task number you wish to edit: ");
+            int taskToEdit = TaskList.checkUserInput();
+
+            System.out.println("Please enter the new task name: ");
+            String newTaskName = scanner.nextLine();
+
+            for (Task task: taskList) {
+                if (task.getTaskNumber() == taskToEdit) {
+                    task.setTaskName(newTaskName);
+                    System.out.println("To-do list has been updated.");
+                }
             }
         }
 
