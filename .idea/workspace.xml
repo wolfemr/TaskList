@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="974bf377-484f-4a0a-9ab6-89548aaf27b0" name="Changes" comment="Add edit task functionality">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TaskList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TaskList.java" afterDir="false" />
@@ -70,7 +69,10 @@
       <workItem from="1674165547339" duration="2586000" />
       <workItem from="1674261251534" duration="283000" />
       <workItem from="1674335621278" duration="987000" />
-      <workItem from="1674776981047" duration="1180000" />
+      <workItem from="1674776981047" duration="1631000" />
+      <workItem from="1674778701983" duration="659000" />
+      <workItem from="1674858182186" duration="138000" />
+      <workItem from="1674932316875" duration="1841000" />
     </task>
     <task id="LOCAL-00001" summary="Add edit task functionality">
       <created>1674336344140</created>

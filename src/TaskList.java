@@ -5,9 +5,8 @@ public class TaskList {
 
     public static void main(String[] args) {
 
-        ArrayList<Task> taskList = new ArrayList<>(); // list to hold task objects during run time
+        getMenuSelection(Task.getListOfTasks());
 
-        getMenuSelection(taskList);
     }
 
 
@@ -45,12 +44,12 @@ public class TaskList {
     }
 
 
-    public static void displayTaskList(ArrayList<Task> taskList) {
+    public static void displayTaskList() {
 
-        if (taskList.size() == 0) {
+        if (Task.getListOfTasks().size() == 0) {
             System.out.println("There are no items in the to-do list.");
         } else {
-            for (Task task: taskList) {
+            for (Task task: Task.getListOfTasks()) {
                 System.out.println(task);
             }
         }
@@ -65,12 +64,12 @@ public class TaskList {
 
         switch (selection) {
             case 1 -> {
-                displayTaskList(taskList);
-                getMenuSelection(taskList);
+                displayTaskList();
+                getMenuSelection(Task.getListOfTasks());
             }
-            case 2 -> Task.addTask(taskList);
-            case 3 -> Task.editTask(taskList);
-            case 4 -> Task.deleteTask(taskList);
+            case 2 -> Task.addTask(Task.getListOfTasks());
+            case 3 -> Task.editTask(Task.getListOfTasks());
+            case 4 -> Task.deleteTask(Task.getListOfTasks());
             case 5 -> System.out.println("Thank you for using the program!");
             default -> {
                 break;
