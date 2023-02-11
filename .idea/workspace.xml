@@ -4,7 +4,7 @@
     <list default="true" id="974bf377-484f-4a0a-9ab6-89548aaf27b0" name="Changes" comment="Add edit task functionality">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TaskList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TaskList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TaskList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +41,8 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration name="TaskList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TaskList" />
+    <configuration name="Menu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Menu" />
       <module name="ToDoList" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -50,7 +50,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TaskList" />
+        <item itemvalue="Application.Menu" />
       </list>
     </recent_temporary>
   </component>
@@ -73,6 +73,10 @@
       <workItem from="1674778701983" duration="659000" />
       <workItem from="1674858182186" duration="138000" />
       <workItem from="1674932316875" duration="1841000" />
+      <workItem from="1674941317562" duration="894000" />
+      <workItem from="1674970228062" duration="418000" />
+      <workItem from="1675617435515" duration="415000" />
+      <workItem from="1675728944522" duration="51000" />
     </task>
     <task id="LOCAL-00001" summary="Add edit task functionality">
       <created>1674336344140</created>
