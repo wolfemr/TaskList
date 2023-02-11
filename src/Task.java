@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+// The Task class is designed to hold all the data for each individual task, as well as hold those task objects
+// in a list
 public class Task {
 
     private int taskNumber;
@@ -45,7 +47,7 @@ public class Task {
 
         listOfTasks.add(task);
 
-        TaskList.getMenuSelection(listOfTasks);
+        Menu.getMenuSelection(listOfTasks);
     }
 
 
@@ -53,7 +55,7 @@ public class Task {
 
         System.out.println("Please enter the task number to delete: ");
 
-        int taskToDelete = TaskList.checkUserInput();
+        int taskToDelete = Menu.checkUserInput();
 
         listOfTasks.removeIf(task -> task.getTaskNumber() == taskToDelete);
 
@@ -64,7 +66,7 @@ public class Task {
             }
         }
 
-        TaskList.getMenuSelection(listOfTasks);
+        Menu.getMenuSelection(listOfTasks);
     }
 
 
@@ -74,24 +76,25 @@ public class Task {
 
         if (listOfTasks.size() == 0) {
             System.out.println("There are no items in the to-do list.");
-            TaskList.getMenuSelection(listOfTasks);
+            Menu.getMenuSelection(listOfTasks);
         } else {
-            TaskList.displayTaskList();
-            System.out.println("Please enter the task number you wish to edit: ");
-            int taskToEdit = TaskList.checkUserInput();
+            Menu.displayTaskList();
+            System.out.println("\nPlease enter the task number you wish to edit: ");
+            int taskToEdit = Menu.checkUserInput();
 
             System.out.println("Please enter the new task name: ");
             String newTaskName = scanner.nextLine();
 
             for (Task task: listOfTasks) {
                 if (task.getTaskNumber() == taskToEdit) {
+                    System.out.println("Changing task " + task.getTaskName() + " to " + newTaskName + ".");
                     task.setTaskName(newTaskName);
-                    System.out.println("To-do list has been updated.");
+                    System.out.println("\nTo-do list has been updated.");
                 }
             }
         }
 
-        TaskList.getMenuSelection(listOfTasks);
+        Menu.getMenuSelection(listOfTasks);
     }
 
 
